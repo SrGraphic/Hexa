@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles-index.css">
     <title>HEXA - Software de Gestion</title>
 </head>
@@ -16,20 +16,20 @@
         <h4>Administra y gestiona tus consultas de forma sencilla y segura</h4>
     </header>
 
-    <!-- Login form -->
+    <!-- Login -->
     <div class="login-container">
         <form id="login-form">
             <div class="form-group">
                 <label><i class="fa-solid fa-building"></i> ORGANIZACIÓN</label>
-                <select id="clinica" class="form-select" required>
+                <select id="clinica" name="clinica" class="form-select" required>
                     <option value="">...</option>
-                    <option value="clinicaSantaMaria">CLÍNICA SANTA MARIA</option>
-                    <option value="clinicaOctubreMd">CLÍNICA OCTUBRE MADRID</option>
+                    <option value="ClinicaPrueba">Clinica Prueba</option>
+                    <option value="ClinicaSantaMaria">Clinica Santa Maria</option>
                 </select>
             </div>
             <div class="form-group">
                 <label><i class="fa-solid fa-user"></i> USUARIO</label>
-                <input type="text" id="usuario" name="usuario" required>
+                <input type="email" id="usuario" name="usuario" required>
             </div>
             <div class="form-group">
                 <label><i class="fa-solid fa-lock"></i> CÓDIGO</label>
@@ -39,9 +39,9 @@
         </form>
         <div class="help-text"><a href="mailto:correo@ejemplo.com">¿Olvidaste tu código?</a></div>
     </div>
-</body>
-<script type="module" src="process/login-function.js"></script>
-<script src="https://kit.fontawesome.com/fbca715a88.js" crossorigin="anonymous"></script>
 
+    <script type="module" src="process/login-function.js"></script>
+    <script src="https://kit.fontawesome.com/fbca715a88.js" crossorigin="anonymous"></script>
+</body>
 
 </html>
