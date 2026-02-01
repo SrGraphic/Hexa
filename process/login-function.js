@@ -1,5 +1,4 @@
 // LOGIN //
-// Firebase-imports
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
@@ -49,7 +48,7 @@ document.getElementById('login-form').addEventListener('submit', async (event) =
 
     // Final-login
     alert(`Bienvenido, ${userData.nombre}! a ${clinicaSeleccionada}`);
-    window.location.href = '#';
+    window.location.href = './pages/pacientes.html';
 
   } catch (error) {
     console.error(error);
