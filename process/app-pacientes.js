@@ -28,7 +28,7 @@ onAuthStateChanged(auth, async (user) => {
 
   try {
     const userDoc = await getDoc(doc(db, "usuarios", user.uid));
-    if (!userDoc.exists()) throw new Error("Usuario no encontrado en Firestore");
+    if (!userDoc.exists()) throw new Error("Usuario no encontrado");
 
     const userData = userDoc.data();
     clinicaActualGlobal = userData.clinica;
@@ -58,7 +58,7 @@ async function getPacientes(clinica) {
     displayPatients(pacientes);
 
   } catch (error) {
-    console.error("Error al obtener pacientes:", error);
+    console.error("Error mostrar pacientes:", error);
   }
 }
 
@@ -95,7 +95,7 @@ function displayPatients(data) {
 }
 
 function redirectToUpdatePacientePage(pacienteId) {
-  window.location.href = `actualizar_paciente.html?id=${pacienteId}`;
+  window.location.href = `#`;
 }
 
 // CUADRO BÚSQUEDA //
@@ -133,3 +133,4 @@ window.searchClient = async function () {
     console.error("Error al buscar pacientes:", error); //captura error busqueda
   }
 };
+
