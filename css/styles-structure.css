@@ -1,0 +1,159 @@
+/* styles-structure.css */
+/* font-imports-structure */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Sans:opsz@9..40&family=Exo+2&family=Inria+Sans&family=Inter:opsz@14..32&family=PT+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-default: #2e3b4e;
+    --color-background: #E8EBF8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background);
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.main-content {
+    flex-grow: 1;
+    border-radius: 20px;
+}
+
+/* menú-principal */
+.sidebar {
+    width: 260px;
+    background-color: var(--color-default);
+    height: 100vh;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo {
+    font-family: "Audiowide", sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    text-decoration: none;
+    border: 1px solid var(--color-default);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 200;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    transition: all 1s;
+    letter-spacing: 1px;
+}
+
+.nav-item i {
+    font-size: 18px;
+    transform: scaleX(-1);
+}
+
+.nav-item:hover {
+    border: 1px solid #cecece;
+}
+
+.nav-item.active {
+    border: 1px solid #cecece;
+}
+
+.footer-box {
+    background: #eef;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+}
+
+/* exit-button */
+#confirmacion-salida {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-container {
+    background-color: #efefef;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.confirm-container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: "Inria Sans", serif;
+    text-transform: uppercase;
+    color: #3e3e3e;
+    font-weight: 500;
+}
+
+.confirm-container button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 14px;
+    width: 120px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.buttons-container-user button:hover {
+    background-color: #4A5568;
+}
+
+.confirm-container #cerrar-btn {
+    background-color: #2D3748;
+    color: #fff;
+}
+
+.confirm-container #mantener-btn {
+    background-color: #2D3748;
+    color: #fff;
+}
+
+.buttons-container-user {
+    display: flex;
+}
