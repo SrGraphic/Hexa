@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/styles-nuevo-paciente.css">
+  <link rel="stylesheet" href="../css/styles-structure.css">
+  <title>HEXA - Software de Gestion</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- menú-principal -->
+    <aside class="sidebar">
+      <div>
+        <div class="logo">HEXA</div>
+        <nav class="nav-menu">
+          <a href="pacientes.html" class="nav-item active"><i class="fa-solid fa-user"></i> Pacientes</a>
+          <a href="#" class="nav-item"><i class="fa-solid fa-calendar-days"></i> Agenda</a>
+          <a href="#" class="nav-item"><i class="fa-solid fa-file-pen"></i> Prescripciones</a>
+          <a href="#" class="nav-item"><i class="fa-solid fa-vial"></i> Laboratorio</a>
+          <a href="facturacion.html" class="nav-item"><i class="fa-solid fa-wallet"></i> Facturación</a>
+          <a href="#" class="nav-item"><i class="fa-solid fa-chart-simple"></i> Análisis</a>
+          <a id="salir-btn" class="nav-item"><i class="fa-solid fa-arrow-right-from-bracket"></i> Salir</a>
+        </nav>
+      </div>
+      <!-- exit-button -->
+      <div id="confirmacion-salida" style="display: none;">
+        <div class="confirm-container">
+          <p>¿Quieres salir de la aplicación?</p>
+          <div class="buttons-container-user">
+            <button id="cerrar-btn">Salir</button>
+            <button id="mantener-btn">Mantener</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Área principal -->
+    <main class="main-content">
+      <form id="addPatientForm">
+
+        <!-- PRINCIPAL -->
+        <div class="container_new">
+
+          <!-- PANEL IZQUIERDO -->
+          <div class="left-panel">
+            <header>
+              <p>DATOS DEL PACIENTE</p>
+            </header>
+
+            <!-- IMAGEN GENERO -->
+            <div class="image-container">
+              <img id="genderImage" src="../assets/hombre.png" alt="imagen_genero">
+            </div>
+
+            <!-- NOMBRE | APELLIDOS -->
+            <div class="form-group-container">
+              <div class="form-group">
+                <label>Nombre</label>
+                <input id="input_name" type="text" name="nombre" required />
+              </div>
+              <div class="form-group">
+                <label>Apellidos</label>
+                <input id="input_subname" type="text" name="apellidos" required />
+              </div>
+            </div>
+
+            <!-- GENERO & FECHA_NACIMIENTO -->
+            <div class="form-group-container">
+              <div class="form-group">
+                <label>Género</label>
+                <select class="gender" id="genero" onchange="changeImage()" name="genero">
+                  <option value="hombre">Hombre</option>
+                  <option value="mujer">Mujer</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Fecha de Nacimiento</label>
+                <input type="date" id="input_date" required />
+              </div>
+            </div>
+
+            <!-- CONTACTO -->
+            <div class="contact-form-container">
+              <div class="form-group">
+                <label>Tel. Móvil</label>
+                <input maxlength="9" id="input_phone" type="text" name="telefono" required />
+              </div>
+              <div class="form-group">
+                <label>Tel. Fijo</label>
+                <input maxlength="9" id="input_phone_2" type="text" name="telefono_2" />
+              </div>
+            </div>
+
+            <!-- CORREO ELECTRONICO -->
+            <div class="form-group-container">
+              <div class="form-group">
+                <label>Correo Electrónico</label>
+                <input type="email" id="input_email" name="email" required />
+              </div>
+            </div>
+
+            <!-- DOMICILIO -->
+            <div class="form-group-container">
+              <div class="form-group">
+                <label>Domicilio</label>
+                <input type="text" id="input_address" name="direccion" required />
+              </div>
+            </div>
+
+            <!-- LOCALIDAD -->
+            <div class="form-group-container">
+              <div class="form-group">
+                <label>Localidad</label>
+                <input list="pueblos" type="text" id="input_locality" name="localidad" required />
+                <datalist id="pueblos">
+                  <option value="45200, Illescas (Toledo)">
+                  <option value="45220, Yeles (Toledo)">
+                  <option value="45221, Esquivias (Toledo)">
+                  <option value="45223, Seseña (Toledo)">
+                  <option value="45529, Yuncler (Toledo)">
+                  <option value="45210, Yuncos (Toledo)">
+                  <option value="45001, Toledo (Toledo)">
+                  <option value="45600, Talavera de la Reina (Toledo)">
+                  <option value="45710, Madridejos (Toledo)">
+                  <option value="45400, Mora (Toledo)">
+                  <option value="45800, Quintanar de la Orden (Toledo)">
+                  <option value="45100, Sonseca (Toledo)">
+                  <option value="45290, Pantoja (Toledo)">
+                </datalist>
+              </div>
+            </div>
+
+            <div class="button-container-check">
+              <div class="action-button">
+                <button type="submit" title="Guardar"><i class="fa-solid fa-check"></i>
+                  <p>Guardar</p>
+                </button>
+              </div>
+              <div class="action-button">
+                <button type="reset" title="Borrar"><i class="fa-solid fa-x"></i>
+                  <p>Borrar</p>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- PANEL DERECHO -->
+          <div class="right-panel">
+            <header>
+              <p>DATOS MÉDICOS</p>
+            </header>
+
+            <div class="right-panel-container">
+
+              <!-- DATOS -->
+              <label>Documentos Firmados</label>
+              <div class="dates-privates">
+                <div class="dates-privates-container">
+                  <label class="file-upload-container">
+                    <div class="icon-wrapper" id="iconWrapper">
+                      <i class="fa-solid fa-upload"></i>
+                    </div>
+                    <span id="fileName">Ningún archivo seleccionado</span>
+                    <input accept="application/pdf" type="file" id="fileInput">
+                  </label>
+                  <p class="sub-dates-privates">Se subirá un documento .pdf unicamente rellenado por el paciente y
+                    firmado por el/la doctora responsable.</p>
+                </div>
+              </div>
+
+              <hr class="line-input">
+
+              <div class="input-container">
+                <label>MEDICAMENTOS ACTUALES</label><br>
+                <textarea id="medicacion_actual"></textarea>
+              </div>
+
+              <div class="input-container">
+                <label>OBSERVACIONES</label><br>
+                <textarea id="observaciones"></textarea>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </main>
+    <script type="module" src="../process/app-exit.js"></script>
+    <script type="module" src="../process/app-add-pacientes.js"></script>
+    <script src="https://kit.fontawesome.com/fbca715a88.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

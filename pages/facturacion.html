@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles-structure.css">
+    <link rel="stylesheet" href="../css/styles-facturación.css">
+    <title>HEXA - Software de Gestion</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- menú-principal -->
+        <aside class="sidebar">
+            <div>
+                <div class="logo">HEXA</div>
+                <nav class="nav-menu">
+                    <a href="pacientes.html" class="nav-item"><i class="fa-solid fa-user"></i> Pacientes</a>
+                    <a href="#" class="nav-item"><i class="fa-solid fa-calendar-days"></i> Agenda</a>
+                    <a href="#" class="nav-item"><i class="fa-solid fa-file-pen"></i> Prescripciones</a>
+                    <a href="#" class="nav-item"><i class="fa-solid fa-vial"></i> Laboratorio</a>
+                    <a href="facturacion.html" class="nav-item active"><i class="fa-solid fa-wallet"></i>
+                        Facturación</a>
+                    <a href="#" class="nav-item"><i class="fa-solid fa-chart-simple"></i> Análisis</a>
+                    <a id="salir-btn" class="nav-item"><i class="fa-solid fa-arrow-right-from-bracket"></i> Salir</a>
+                </nav>
+            </div>
+            <!-- exit-button -->
+            <div id="confirmacion-salida" style="display: none;">
+                <div class="confirm-container">
+                    <p>¿Quieres salir de la aplicación?</p>
+                    <div class="buttons-container-user">
+                        <button id="cerrar-btn">Salir</button>
+                        <button id="mantener-btn">Mantener</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="fact-container">
+                <div class="fact-content">
+                    <header>
+                        <p>NUEVA FACTURA</p>
+                    </header>
+
+                    <button class="factButton" onclick="newInvoice()"><i class="fa-solid fa-plus"></i> Nueva factura</button>
+                    <button class="factButton" onclick="deleteInvoice()"><i class="fa-solid fa-x"></i> Eliminar factura</button>
+                    
+                    <br>
+                    <br id="facturaTitulo">
+
+                    <label>Fecha:</label>
+                    <input type="date" id="facturaFecha">
+
+                    <label>Nombre:</label>
+                    <input id="nombreEntrada" placeholder="Nombre">
+
+                    <label>Cantidad:</label>
+                    <input id="cantidadEntrada" type="number" placeholder="Cantidad">
+                    <button class="factButtonAdd" onclick="addItem()">Añadir +</button>
+
+                    <div class="pagination">
+                        <button onclick="prevPage()">⬅</button>
+                        <p id="pageInfo">Página 1</p>
+                        <button onclick="nextPage()">➡</button>
+                    </div>
+                    <table cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Valor</th>
+                                <th class="space-custom"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="itemsTable"></tbody>
+                    </table>
+                </div>
+                <div class="sidebar2">
+                    <h2>Lista Facturas</h2>
+                    <hr>
+                    <div id="listadoFacturas"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- ImportsJS -->
+    <script type="module" src="../process/app-facturacion.js"></script>
+    <script type="module" src="../process/app-exit.js"></script>
+    <script src="https://kit.fontawesome.com/fbca715a88.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
