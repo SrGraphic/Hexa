@@ -1,0 +1,210 @@
+.fact-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar2 {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 15px;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+}
+
+header {
+    text-align: center;
+    background-color: #2e3b4e;
+    padding: 12px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+
+header p {
+    font-size: 14px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.fact-content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.fact-content>header {
+    margin: -20px -20px 20px -20px;
+    border-radius: 10px 10px 0 0;
+}
+
+label {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: #374151;
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+
+input {
+    padding: 9px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #F8F8F8;
+    font-size: 14px;
+    outline: none;
+    font-family: "Inter", sans-serif;
+}
+
+.factura {
+    padding: 10px;
+    background: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.factura.active {
+    background: #dbeafe;
+}
+
+.factButton {
+    padding: 3px;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+    width: 49.5%;
+    background-color: var(--color-default);
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.factButtonAdd {
+    padding: 3px;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+    background-color: var(--color-default);
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-left: 18px;
+    border-radius: 5px;
+}
+
+.deleteButtonFatc {
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.factButton:hover,
+.factButtonAdd:hover {
+    background-color: #444f62;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+table {
+    margin-top: 20px;
+    background-color: white;
+    width: 100%;
+    border-collapse: separate;
+}
+
+thead {
+    color: #a19898;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: 13px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+thead th {
+    border: 1px solid #efefef;
+    background-color: #f3f3f3;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+tbody {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+tbody td {
+    padding: 15px 10px;
+    color: #4A5568;
+    border: 1px solid #efefef;
+}
+
+tbody tr:hover {
+    background-color: #F7FAFC;
+}
+
+th,
+td {
+    width: 200px;
+}
+
+.space-custom {
+    width: 60px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.pagination p {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.pagination button {
+    border: none;
+    background: #2e3b4e;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
