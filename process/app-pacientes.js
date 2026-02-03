@@ -95,7 +95,7 @@ function displayPatients(data) {
 }
 
 function redirectToUpdatePacientePage(pacienteId) {
-  window.location.href = `#`;
+  window.location.href = `actualizar_paciente.html?id=${pacienteId}`;
 }
 
 // CUADRO BÚSQUEDA //
@@ -133,4 +133,5 @@ window.searchClient = async function () {
     console.error("Error al buscar pacientes:", error); //captura error busqueda
   }
 };
+
 
