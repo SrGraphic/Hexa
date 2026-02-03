@@ -31,8 +31,8 @@ clinicas
         ├── pacientes (subcolección)
         │      └── pacienteId
         │
-        ├── agenda (subcolección)
-        │      └── citaId
+        ├── facturas (subcolección)
+        │      └── facturaId
 
 ````
 <br>
