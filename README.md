@@ -2,6 +2,8 @@
 
 Software de Gestion Web dedicado a clinicas medicas
 -
+HEXA es una aplicación web desarrollada como TFG para Desarrollo de Aplicaciones Web (DAW).
+Su objetivo es facilitar la gestión en una clínica médica mediante una plataforma sencilla, segura y accesible desde el navegador web.
 
 ### 📄 [Ver manual de uso]()
 
