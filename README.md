@@ -1,4 +1,4 @@
-# HEXA - Gestión Web 🏥
+# HEXA - Gestión Web
 
 <img width="1000" height="130" alt="image" src="https://github.com/user-attachments/assets/c2db8aad-2f8a-4c8a-b04c-106b1ec88f5a" /><br>
 
