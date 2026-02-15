@@ -5,6 +5,15 @@ Su objetivo es facilitar la gestión en clínicas médicas mediante una platafor
 
 ---
 
+  <a href="./CHANGELOG.md">
+    <img src="https://img.shields.io/badge/GitHub-Historial_de_versiones-0A66C2?style=for-the-badge&logo=github" />
+  </a>
+  <br><br>
+  <a href="./ROADMAP.md">
+    <img src="https://img.shields.io/badge/GitHub-Próximas_funciones-6f42c1?style=for-the-badge&logo=github" />
+  </a>
+
+
 ### 📄 [Ver manual de uso]()
 
 ### 🌐  [Lanzar APP](https://srgraphic.github.io/Hexa/)
