@@ -10,18 +10,32 @@ Su objetivo es facilitar la gestión en clínicas médicas mediante una platafor
 ### 🌐  [Lanzar APP](https://srgraphic.github.io/Hexa/)
 
 ### 🗄️ Sistema de Base de Datos (Firebase)
-```text
-Firebase Authentication:
- └── Login email/contraseña
+```
+<Firebase Authentication>
+   └── Login email/contraseña
+````
+````
+<Firestore Database-Colección 1: usuarios>
 
-Firestore Database:
- ├── usuarios/{uid}
- │    ├── nombre: "nombreUsuario"
- │    └── clinica: "nombreClinica"
- └── clinicas/{nombreClinica}
-      ├── activa: true
-      ├── pacientes/{pacienteId}
-      └── facturas/{facturaId}
+usuarios
+ └── {uid}
+        ├── nombre: "nombreUsuario"
+        ├── clinica: "nombreClinica"
+````
+````
+<Firestore Database-Colección 2: clinicas>
+
+clinicas
+ └── nombreClinica
+        ├── nombre: "Clínica A"
+        ├── activa: true
+        │
+        ├── pacientes (subcolección)
+        │      └── pacienteId
+        │
+        ├── agenda (subcolección)
+        │      └── citaId
+
 ````
 <br>
 
