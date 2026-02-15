@@ -13,6 +13,17 @@
 > 
 <br>
 
+## v0.5.3 – 14/02/2026
+
+| Tipo | Detalle |
+|------|---------|
+| Corregido | Sistema de seleccion de organizaciones |
+| Corregido | Sistema de array de localizacion en /pacientes |
+
+**Esta actualziacion estará dispobile en la realise 0.6**
+
+---
+
 ## v0.5.2 – 02/02/2026
 
 | Tipo | Detalle |
