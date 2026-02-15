@@ -1,41 +1,27 @@
-# HEXA - Gestión Web
+# HEXA - Gestión Web 🏥
 
-Software de Gestion Web dedicado a clinicas medicas
--
-HEXA es una aplicación web desarrollada como TFG para Desarrollo de Aplicaciones Web (DAW).
-Su objetivo es facilitar la gestión en una clínica médica mediante una plataforma sencilla, segura y accesible desde el navegador web.
+**HEXA** es una aplicación web desarrollada como TFG para **Desarrollo de Aplicaciones Web (DAW)**.  
+Su objetivo es facilitar la gestión en clínicas médicas mediante una plataforma **sencilla, segura y accesible desde cualquier navegador**.
+
+---
 
 ### 📄 [Ver manual de uso]()
 
 ### 🌐  [Lanzar APP](https://srgraphic.github.io/Hexa/)
 
-### SISTEMA DB - FIREBASE
-```
-<Firebase Authentication>
-   └── Login email/contraseña
-````
-````
-<Firestore Database-Colección 1: usuarios>
+### 🗄️ Sistema de Base de Datos (Firebase)
+```text
+Firebase Authentication:
+ └── Login email/contraseña
 
-usuarios
- └── {uid}
-        ├── nombre: "nombreUsuario"
-        ├── clinica: "nombreClinica"
-````
-````
-<Firestore Database-Colección 2: clinicas>
-
-clinicas
- └── nombreClinica
-        ├── nombre: "Clínica A"
-        ├── activa: true
-        │
-        ├── pacientes (subcolección)
-        │      └── pacienteId
-        │
-        ├── facturas (subcolección)
-        │      └── facturaId
-
+Firestore Database:
+ ├── usuarios/{uid}
+ │    ├── nombre: "nombreUsuario"
+ │    └── clinica: "nombreClinica"
+ └── clinicas/{nombreClinica}
+      ├── activa: true
+      ├── pacientes/{pacienteId}
+      └── facturas/{facturaId}
 ````
 <br>
 
