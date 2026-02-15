@@ -1,5 +1,7 @@
 # HEXA - Gestión Web 🏥
 
+<img width="1000" height="130" alt="image" src="https://github.com/user-attachments/assets/c2db8aad-2f8a-4c8a-b04c-106b1ec88f5a" /><br>
+
 **HEXA** es una aplicación web desarrollada como TFG para **Desarrollo de Aplicaciones Web (DAW)**.  
 Su objetivo es facilitar la gestión en clínicas médicas mediante una plataforma **sencilla, segura y accesible desde cualquier navegador**.
 
@@ -10,7 +12,7 @@ Su objetivo es facilitar la gestión en clínicas médicas mediante una platafor
 ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Firebase](https://img.shields.io/badge/firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
 
----
+### 🔗 Enlaces útiles
 
   <a href="./CHANGELOG.md">
     <img src="https://img.shields.io/badge/Changelog-Historial_de_versiones-6f42c1?style=for-the-badge&logo=read-the-docs" />
@@ -34,18 +36,16 @@ Su objetivo es facilitar la gestión en clínicas médicas mediante una platafor
 ```
 <Firebase Authentication>
    └── Login email/contraseña
-````
-````
-<Firestore Database-Colección 1: usuarios>
 
+
+<Firestore Database-Colección 1: usuarios>
 usuarios
  └── {uid}
         ├── nombre: "nombreUsuario"
         ├── clinica: "nombreClinica"
-````
-````
-<Firestore Database-Colección 2: clinicas>
 
+
+<Firestore Database-Colección 2: clinicas>
 clinicas
  └── nombreClinica
         ├── nombre: "Clínica A"
@@ -58,6 +58,4 @@ clinicas
         │      └── citaId
 
 ````
-<br>
-
 ###### 15/02/2026 By SrGraphic 
