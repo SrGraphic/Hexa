@@ -1,10 +1,19 @@
 # CHANGELOG – Hexa
 
-> Historial oficial de versiones del proyecto Hexa.
+> Historial oficial de versiones del proyecto **Hexa**.  
+> Este documento recoge todas las modificaciones relevantes realizadas en cada versión, incluyendo:
+> 
+> - Nuevas funcionalidades implementadas
+> - Mejoras de interfaz y experiencia de usuario
+> - Correcciones de errores y fallos detectados
+> - Cambios estructurales y optimizaciones
+> 
+> El objetivo es mantener un registro claro, transparente y organizado de la evolución de Hexa, facilitando la comprensión de su desarrollo tanto para el equipo como para los usuarios.
+> Las fechas indicadas corresponden al momento de publicación de cada versión.
+> 
+<br>
 
----
-
-# v0.5.2 – 02/02/2026
+## v0.5.2 – 02/02/2026
 
 | Tipo | Detalle |
 |------|---------|
@@ -15,7 +24,7 @@
 
 ---
 
-# v0.4.4 – 14/01/2026
+## v0.4.4 – 14/01/2026
 
 | Tipo | Detalle |
 |------|---------|
@@ -27,7 +36,7 @@
 
 ---
 
-# v0.4.2 – 09/01/2026
+## v0.4.2 – 09/01/2026
 
 | Tipo | Detalle |
 |------|---------|
@@ -40,7 +49,7 @@
 
 ---
 
-# v0.3.5 – 19/12/2025
+## v0.3.5 – 19/12/2025
 
 | Tipo | Detalle |
 |------|---------|
@@ -55,7 +64,7 @@
 
 ---
 
-# v0.3.2 – 11/12/2025
+## v0.3.2 – 11/12/2025
 
 | Tipo | Detalle |
 |------|---------|
@@ -67,7 +76,7 @@
 
 ---
 
-# v0.2.5 – 04/12/2025
+## v0.2.5 – 04/12/2025
 
 | Tipo | Detalle |
 |------|---------|
@@ -79,7 +88,7 @@
 
 ---
 
-# v0.2.4 – 23/11/2025
+## v0.2.4 – 23/11/2025
 
 | Tipo | Detalle |
 |------|---------|
@@ -90,7 +99,7 @@
 
 ---
 
-# v0.2.2 – 13/11/2025
+## v0.2.2 – 13/11/2025
 
 | Tipo | Detalle |
 |------|---------|
@@ -101,7 +110,7 @@
 
 ---
 
-# v0.2.1 – 09/11/2025
+## v0.2.1 – 09/11/2025
 
 | Tipo | Detalle |
 |------|---------|
@@ -115,7 +124,7 @@
 
 ---
 
-# v0.2.0 – 08/11/2025
+## v0.2.0 – 08/11/2025
 
 | Tipo | Detalle |
 |------|---------|
