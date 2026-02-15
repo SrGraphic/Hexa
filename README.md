@@ -4,19 +4,31 @@
 Su objetivo es facilitar la gestión en clínicas médicas mediante una plataforma **sencilla, segura y accesible desde cualquier navegador**.
 
 ---
+![Licencia](https://img.shields.io/badge/license-srgraphic-lightgrey) ![Desarollo](https://img.shields.io/badge/version-v0.5.2-blue)
+![HTML](https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css3-1572B6?style=flat&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Firebase](https://img.shields.io/badge/firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
+
+---
 
   <a href="./CHANGELOG.md">
-    <img src="https://img.shields.io/badge/GitHub-Historial_de_versiones-0A66C2?style=for-the-badge&logo=github" />
+    <img src="https://img.shields.io/badge/Changelog-Historial_de_versiones-6f42c1?style=for-the-badge&logo=read-the-docs" />
   </a>
   <br><br>
   <a href="./ROADMAP.md">
-    <img src="https://img.shields.io/badge/GitHub-Próximas_funciones-6f42c1?style=for-the-badge&logo=github" />
+    <img src="https://img.shields.io/badge/Roadmap-Próximas_funciones-6f42c1?style=for-the-badge&logo=trello" />
+  </a>
+  <br><br>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Manual-Ver_Manual_De_Uso-4DBA23?style=for-the-badge&logo=google-docs" />
+  </a>
+  <br><br>
+  <a href="https://srgraphic.github.io/Hexa/">
+    <img src="https://img.shields.io/badge/Web-Lanzar_app_demo-0A66C2?style=for-the-badge&logo=google-chrome" />
   </a>
 
-
-### 📄 [Ver manual de uso]()
-
-### 🌐  [Lanzar APP](https://srgraphic.github.io/Hexa/)
+---
 
 ### 🗄️ Sistema de Base de Datos (Firebase)
 ```
@@ -48,10 +60,4 @@ clinicas
 ````
 <br>
 
-![Licencia](https://img.shields.io/badge/license-srgraphic-lightgrey) ![Desarollo](https://img.shields.io/badge/version-v0.5.2-blue)
-
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="20"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="20"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="20"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg" width="20"/>
-
-###### 02/02/2026 By SrGraphic 
+###### 15/02/2026 By SrGraphic 
