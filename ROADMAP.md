@@ -1,20 +1,15 @@
 # Roadmap – Hexa
 
-> Este documento describe la planificación estratégica de futuras mejoras y nuevas funcionalidades en **Hexa**.  
-> Incluye mejoras de interfaz, nuevas funciones lógicas y objetivos a futuro para mejorar la experiencia del usuario y la eficiencia del sistema.
+> Plan estratégico de futuras mejoras y nuevas funcionalidades en **Hexa**, centrado en eficiencia, seguridad y experiencia de usuario.
 
 ---
 
 ## Visión del Producto
 
-Hexa busca ser una plataforma de gestión clínica **sencilla, segura y accesible**, cubriendo todas las necesidades básicas de un entorno sanitario:
+Hexa busca ser una plataforma clínica **sencilla, segura y accesible**, cubriendo las necesidades básicas del entorno sanitario:
 
-- Gestión de pacientes
-- Agenda de citas
-- Prescripciones médicas
-- Facturación
-- Accesibilidad y experiencia de usuario mejorada
-- Uso eficiente desde cualquier navegador y, a futuro, dispositivos móviles o tablets
+- Gestión de pacientes, agenda de citas, prescripciones y facturación  
+- Interfaz clara, accesible y eficiente en cualquier navegador, con planes para móviles y tablets
 
 ---
 
@@ -24,10 +19,10 @@ Hexa busca ser una plataforma de gestión clínica **sencilla, segura y accesibl
 
 | Tipo | Funcionalidad / Mejora |
 |------|-----------------------|
-| Lógica | Panel de administración para informáticos y personal de soporte |
-| Lógica | Mejorar flujo de registro y baja de usuarios sin depender de Firebase |
-| UI | Mejoras de avisos, botones y feedback de acciones en el panel de administración |
-| UI | Optimización de la interacción con opciones de usuario |
+| Lógica | Panel de administración con login dedicado para admins |
+| Lógica | Gestión de usuarios, pacientes y organizaciones |
+| UI | Mejora de interacción, avisos y feedback de acciones |
+| UI | Integración de **SweetAlert2** para alertas y confirmaciones |
 | Corregido | Ajustes menores en la gestión de usuarios existentes |
 
 ---
@@ -36,11 +31,10 @@ Hexa busca ser una plataforma de gestión clínica **sencilla, segura y accesibl
 
 | Tipo | Funcionalidad / Mejora |
 |------|-----------------------|
-| Lógica | Agenda completa de citas médicas con alertas y recordatorios |
-| Lógica | Gestión de prescripciones médicas |
-| Lógica | Gestión integral de pacientes |
+| Lógica | Agenda de citas con alertas y recordatorios |
+| Lógica | Gestión de prescripciones y pacientes |
 | Lógica | Sistema de facturación robusto |
-| UI | Mejoras en la visualización de la información para facilitar la gestión diaria |
+| UI | Mejora visual de información y flujos de gestión |
 
 ---
 
@@ -48,10 +42,9 @@ Hexa busca ser una plataforma de gestión clínica **sencilla, segura y accesibl
 
 | Tipo | Funcionalidad / Mejora |
 |------|-----------------------|
-| UI | Mejorar accesibilidad y feedback del usuario en todas las acciones |
-| UI | Nuevos botones e indicadores que mantengan el diseño plano y natural |
-| UI | Actualización constante de la interfaz manteniendo colores y diseño consistente |
-| Lógica | Ajustes en flujos de interacción según uso real de la aplicación |
+| UI | Interfaz accesible, clara y consistente |
+| UI | Nuevos controles y selección avanzada con **TomSelect** |
+| Lógica | Ajustes en flujos según uso real de la aplicación |
 
 ---
 
@@ -60,13 +53,12 @@ Hexa busca ser una plataforma de gestión clínica **sencilla, segura y accesibl
 | Tipo | Funcionalidad / Mejora |
 |------|-----------------------|
 | UI | Adaptar interfaz para tablets y móviles |
-| Lógica | Optimización del rendimiento en pantallas más pequeñas |
-| Idea | Ampliar posibilidades de uso en clínicas que trabajen con dispositivos móviles |
+| Lógica | Optimización de rendimiento en pantallas pequeñas |
+| Idea | Uso ampliado en clínicas con dispositivos móviles |
 
 ---
 
 ### 📌 Notas Generales
 
-- Se prioriza la **gestión de pacientes, agenda, prescripciones y facturación** como funciones críticas.  
-- Todas las mejoras de UI buscan mantener la simplicidad y claridad del diseño original de Hexa.  
-- Las fases son orientativas y pueden ajustarse según el feedback y necesidades reales de las clínicas.  
+- Se prioriza la **gestión de pacientes, agenda, prescripciones y facturación** como funciones críticas  
+- Todas las mejoras de UI mantienen la simplicidad y claridad de Hexa  
