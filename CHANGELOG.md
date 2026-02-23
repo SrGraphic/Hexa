@@ -13,14 +13,24 @@
 > 
 <br>
 
+## v0.6.0 – 25/02/2026
+
+| Tipo | Detalle |
+|------|---------|
+| Nuevo | Panel de administración con login dedicado para admins |
+| Nuevo | Gestión de organizaciones, usuarios y pacientes desde el admin-panel |
+| Mejorado | Interfaz organizada en secciones dentro de la misma página |
+| Mejorado | Reglas de Firebase actualizadas para mayor seguridad y precisión |
+
+---
+
 ## v0.5.3 – 14/02/2026
 
 | Tipo | Detalle |
 |------|---------|
 | Corregido | Sistema de seleccion de organizaciones |
-| Corregido | Sistema de array de localizacion en /pacientes |
 
-**Esta actualziacion estará dispobile en la realise 0.6**
+**Esta actualziacion estará dispobile en la version v0.6**
 
 ---
 
