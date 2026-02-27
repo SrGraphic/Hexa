@@ -54,4 +54,11 @@ clinicas
         │      └── citaId
 
 ````
+### 📅 Próximas Incorporaciones
+
+| Librería | Descripción |
+|----------|------------|
+| SweetAlert2 | Implementación de modales personalizables para reemplazar alertas nativas y mejorar la experiencia de usuario. |
+| TomSelect | Mejora de campos select con búsqueda, autocompletado y multiselección para formularios más dinámicos. |
+
 ###### 15/02/2026 By SrGraphic 
