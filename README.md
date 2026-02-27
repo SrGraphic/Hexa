@@ -18,10 +18,6 @@ Su objetivo es facilitar la gestión en clínicas médicas mediante una platafor
     <img src="https://img.shields.io/badge/Changelog-Historial_de_versiones-6f42c1?style=for-the-badge&logo=read-the-docs" />
   </a>
   <br><br>
-  <a href="./ROADMAP.md">
-    <img src="https://img.shields.io/badge/Roadmap-Próximas_funciones-6f42c1?style=for-the-badge&logo=trello" />
-  </a>
-  <br><br>
   <a href="#">
     <img src="https://img.shields.io/badge/Manual-Ver_Manual_De_Uso-4DBA23?style=for-the-badge&logo=google-docs" />
   </a>
