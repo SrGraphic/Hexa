@@ -23,7 +23,7 @@ Su objetivo es facilitar la gestión en clínicas médicas mediante una platafor
   </a>
   <br><br>
   <a href="https://srgraphic.github.io/Hexa/">
-    <img src="https://img.shields.io/badge/Web-Lanzar_app_demo-0A66C2?style=for-the-badge&logo=google-chrome" />
+    <img src="https://img.shields.io/badge/Web App-Lanzar_app_demo-0A66C2?style=for-the-badge&logo=google-chrome" />
   </a>
 
 ---
