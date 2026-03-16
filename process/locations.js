@@ -1,0 +1,17 @@
+export const pueblos = [
+  "45001, Toledo (Toledo)",
+  "45210, Yuncos (Toledo)",
+  "45230, Numancia de la Sagra (Toledo)",
+  "45217, Ugena (Toledo)",
+  "45221, Esquivias (Toledo)",
+  "45223, Seseña (Toledo)",
+  "45592, Cabañas de la Sagra (Toledo)",
+  "45222, Borox (Toledo)",
+  "45500, Torrijos (Toledo)",
+  "45593, Bargas (Toledo)",
+  "45529, Yuncler (Toledo)",
+  "45600, Talavera de la Reina (Toledo)",
+  "45860, Villacañas (Toledo)",
+  "45700, Consuegra (Toledo)",
+  "45800, Quintanar de la Orden (Toledo)",
+];

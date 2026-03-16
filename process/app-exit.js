@@ -27,7 +27,7 @@ document.getElementById('cerrar-btn').addEventListener('click', async () => {
         window.location.href = '../index.html';
     } catch (error) {
         console.error("Error al cerrar sesión:", error);
-        alert("No se pudo cerrar sesión. Inténtalo de nuevo.");
+        alert("No se pudo cerrar sesión");
     }
 });
 
@@ -35,3 +35,4 @@ document.getElementById('cerrar-btn').addEventListener('click', async () => {
 document.getElementById('mantener-btn').addEventListener('click', () => {
     document.getElementById('confirmacion-salida').style.display = 'none';
 });
+

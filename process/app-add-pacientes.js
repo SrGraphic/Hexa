@@ -14,6 +14,17 @@ function changeImage() {
     }
 }
 
+// LOCATIONS.JS
+import { pueblos } from './locations.js';
+
+const datalist = document.getElementById('pueblos');
+
+pueblos.forEach(pueblo => {
+  const option = document.createElement('option');
+  option.value = pueblo;
+  datalist.appendChild(option);
+});
+
 window.changeImage = changeImage;
 
 // Firebase-config
@@ -75,7 +86,7 @@ document.getElementById('addPatientForm').addEventListener('submit', async (even
             nuevoId = snap.docs[0].data().id + 1;
         }
 
-        // valores-tabla
+        // valores-tabla 1
         const newPatient = {
             id: nuevoId,
             nombre: input_name.value.trim(),
