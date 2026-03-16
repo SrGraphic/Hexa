@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles-admin.css">
+    <title>HEXA - Software de Gestion</title>
+</head>
+
+<body>
+    <header>
+        <h2>HEXA ADMIN PANEL</h2>
+        <a id="salir-btn" class="exit-button"> Cerrar sesión</a>
+    </header>
+    <nav>
+        <button class="tab-btn active" data-tab="clinicas"><i class="fa-solid fa-hospital-user"></i>&nbsp; GESTIÓN CLÍNICAS</button>
+        <button class="tab-btn" data-tab="usuarios"><i class="fa-solid fa-user-doctor"></i>&nbsp; GESTIÓN USUARIOS</button>
+        <button class="tab-btn" data-tab="pacientes"><i class="fa-solid fa-user"></i>&nbsp; GESTIÓN PACIENTES</button>
+    </nav>
+    <!-- exit-button -->
+    <div id="confirmacion-salida" style="display: none;">
+        <div class="confirm-container">
+            <p>¿Quieres salir de la aplicación?</p>
+            <div class="buttons-container-user">
+                <button id="cerrar-btn">Salir</button>
+                <button id="mantener-btn">Mantener</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Crear Clínica -->
+    <section id="clinicas" class="section active">
+        <h3 class="form-title">Gestión Clínicas</h3>
+        <div class="admin-card-container">
+            <div style="flex: 1;" class="admin-card">
+                <form id="formCrearClinica">
+                    <div class="form-group">
+                        <label>ID Clave</label>
+                        <input type="text" id="inputIdClinica" placeholder="ID de la organización" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" id="inputNombre" placeholder="Nombre de la organización" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>NIF de clínica</label>
+                        <input type="text" id="inputNif" placeholder="NIF">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Teléfono de clínica</label>
+                        <input type="text" id="inputTelefono" placeholder="Teléfono de la organización">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Estado</label>
+                        <select id="selectEstado" required>
+                            <option>Activa</option>
+                            <option>Inactiva</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <button class="btn btn-create" type="submit"> Registrar Organización </button>
+                </form>
+            </div>
+            <table style="flex: 3;" id="lista-clinicas">
+                <thead>
+                    <tr>
+                        <th>NOMBRE</th>
+                        <th>NIF</th>
+                        <th>TELÉFONO</th>
+                        <th>ESTADO</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-clinicas">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Añadir Usuario -->
+    <section id="usuarios" class="section">
+        <h3 class="form-title">Gestión Usuarios</h3>
+        <div class="admin-card-container">
+            <div style="flex: 1;" class="admin-card">
+                <form id="formCrearUsuario">
+                    <div class="form-group">
+                        <label>UID</label>
+                        <input type="text" id="inputUid" placeholder="UID del usuario" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Nombre del usuario</label>
+                        <input type="text" id="inputNombreUsuario" placeholder="Nombre del usuario" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Organización perteneciente</label>
+                        <select id="selectClinicas" required>
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Rol</label>
+                        <select id="selectRol" required>
+                            <option selected>usuario</option>
+                            <option disabled>administrador</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <button type="submit" class="btn btn-add">Registrar Usuario</button>
+                </form>
+            </div>
+            <table style="flex: 3;" id="lista-usuarios">
+                <thead>
+                    <tr>
+                        <th>NOMBRE</th>
+                        <th>ORGANIZACIÓN</th>
+                        <th>ROL</th>
+                        <th>ESTADO</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-usuarios">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Eliminar Pacientes -->
+    <section id="pacientes" class="section">
+        <h3 class="form-title">Gestión Pacientes</h3>
+        <!-- Eliminar Paciente -->
+        <div class="admin-card-container">
+            <div style="flex: 1;" class="admin-card">
+                <form id="form-eliminar-paciente">
+                    <div class="form-group">
+                        <label>ID Paciente</label>
+                        <input type="text" id="input-paciente-id">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Código Clínica</label>
+                        <input type="text" id="input-clinica-id">
+                    </div>
+                    <br><br>
+                    <button class="btn btn-delete" type="submit"> Buscar Paciente </button>
+                </form>
+            </div>
+
+            <table style="flex: 3;" id="lista-usuarios">
+                <thead>
+                    <tr>
+                        <th>ID ORGANIZACION</th>
+                        <th>NOMBRE</th>
+                        <th>ID PACIENTE</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="pacientes-table-body">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script type="module" src="admin-panel-cm.js"></script>
+    <script type="module" src="../process/app-exit.js"></script>
+    <script src="https://kit.fontawesome.com/fbca715a88.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
