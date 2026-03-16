@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/styles-nuevo-paciente.css">
   <link rel="stylesheet" href="../css/styles-structure.css">
   <title>HEXA - Software de Gestion</title>
@@ -118,22 +118,8 @@
             <div class="form-group-container">
               <div class="form-group">
                 <label>Localidad</label>
-                <input list="pueblos" type="text" id="input_locality" name="localidad" required />
-                <datalist id="pueblos">
-                  <option value="45200, Illescas (Toledo)">
-                  <option value="45220, Yeles (Toledo)">
-                  <option value="45221, Esquivias (Toledo)">
-                  <option value="45223, Seseña (Toledo)">
-                  <option value="45529, Yuncler (Toledo)">
-                  <option value="45210, Yuncos (Toledo)">
-                  <option value="45001, Toledo (Toledo)">
-                  <option value="45600, Talavera de la Reina (Toledo)">
-                  <option value="45710, Madridejos (Toledo)">
-                  <option value="45400, Mora (Toledo)">
-                  <option value="45800, Quintanar de la Orden (Toledo)">
-                  <option value="45100, Sonseca (Toledo)">
-                  <option value="45290, Pantoja (Toledo)">
-                </datalist>
+                <input list="pueblos" id="input_locality" name="localidad" required>
+                <datalist id="pueblos"></datalist>
               </div>
             </div>
 
@@ -198,6 +184,5 @@
     <script type="module" src="../process/app-add-pacientes.js"></script>
     <script src="https://kit.fontawesome.com/fbca715a88.js" crossorigin="anonymous"></script>
 </body>
-
 
 </html>
